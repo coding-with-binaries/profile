@@ -1,0 +1,16 @@
+.app-nav {
+  padding: 1rem;
+}
+
+.app-nav-profile-pic-wrapper {
+  height: 152px;
+  width: 152px;
+  border-radius: 76px;
+  background: white;
+}
+
+.app-nav-profile-pic {
+  height: 144px;
+  width: 144px;
+  border-radius: 72px;
+}

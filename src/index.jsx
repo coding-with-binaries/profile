@@ -5,7 +5,7 @@ import App from './App';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="profile">
     <App />
   </BrowserRouter>,
   document.getElementById('root')

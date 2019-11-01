@@ -24,7 +24,7 @@ export default function() {
         >
           <Image
             className="app-nav-profile-pic"
-            src="images/profile.jpg"
+            src={process.env.REACT_APP_IMAGE_URL}
           ></Image>
         </Box>
       </Box>

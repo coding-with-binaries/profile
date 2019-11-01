@@ -1,7 +1,7 @@
-.app-header {
+.app-container .app-header {
   padding: 0 1rem;
 }
 
-.app-header-clock {
+.app-header .app-header-clock {
   color: white;
 }

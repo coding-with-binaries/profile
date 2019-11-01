@@ -1,23 +1,48 @@
-import { Box, Image } from 'grommet';
+import { Box, Grid, Image, Text } from 'grommet';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import navActions from './nav-actions';
 import './Nav.css';
-
 export default function() {
   return (
-    <Box
+    <Grid
       className="app-nav"
-      background="linear-gradient(162.77deg, #865ED6 -9.18%, #18BAB9 209.09%)"
       gridArea="nav"
-      align="center"
+      gap="small"
+      rows={['192px', 'auto']}
     >
       <Box
-        className="app-nav-profile-pic-wrapper"
-        elevation="large"
+        className="app-nav-profile-pic-container"
         align="center"
         justify="center"
       >
-        <Image className="app-nav-profile-pic" src="images/profile.jpg"></Image>
+        <Box
+          className="app-nav-profile-pic-wrapper"
+          elevation="large"
+          align="center"
+          justify="center"
+        >
+          <Image
+            className="app-nav-profile-pic"
+            src="images/profile.jpg"
+          ></Image>
+        </Box>
       </Box>
-    </Box>
+      <Box className="app-nav-actions">
+        {navActions.map(a => {
+          const Icon = a.icon;
+          return (
+            <NavLink
+              className="app-nav-action"
+              activeClassName="active"
+              to={a.to}
+            >
+              <Icon size="20px" className="app-nav-action-icon" />
+              <Text size="medium">{a.title}</Text>
+            </NavLink>
+          );
+        })}
+      </Box>
+    </Grid>
   );
 }

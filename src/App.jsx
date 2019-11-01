@@ -1,10 +1,11 @@
-import { Box, Grid, Grommet } from 'grommet';
+import { Grid, Grommet } from 'grommet';
 import React from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/header';
+import Main from './components/main';
 import Nav from './components/nav';
 import { theme } from './theme';
-
 function App() {
   return (
     <Grommet className="app-container" theme={theme} full>
@@ -20,7 +21,7 @@ function App() {
       >
         <Header />
         <Nav />
-        <Box gridArea="main" />
+        <Route path="/" component={Main} />
       </Grid>
     </Grommet>
   );

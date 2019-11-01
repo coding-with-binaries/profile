@@ -1,16 +1,45 @@
-.app-nav {
-  padding: 1rem;
+.app-container .app-nav {
+  background: linear-gradient(162.77deg, #865ed6 -9.18%, #18bab9 209.09%);
 }
 
-.app-nav-profile-pic-wrapper {
+.app-nav-profile-pic-container > .app-nav-profile-pic-wrapper {
   height: 152px;
   width: 152px;
   border-radius: 76px;
   background: white;
 }
 
-.app-nav-profile-pic {
+.app-nav-profile-pic-wrapper > .app-nav-profile-pic {
   height: 144px;
   width: 144px;
   border-radius: 72px;
+}
+
+.app-nav > .app-nav-actions > .app-nav-action {
+  display: flex;
+  padding: 6px 30px;
+  height: 48px;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in, background 0.3s ease-in;
+}
+
+.app-nav > .app-nav-actions > .app-nav-action:hover,
+.app-nav > .app-nav-actions > .app-nav-action.active {
+  transition: color 0.3s ease-in, background 0.3s ease-in;
+  background: #f5f5f5;
+  color: #865ed6;
+}
+
+.app-nav-action > .app-nav-action-icon {
+  transition: stroke 0.3s ease-in;
+  stroke: white;
+  margin-right: 12px;
+}
+
+.app-nav-action:hover > .app-nav-action-icon,
+.app-nav-action.active > .app-nav-action-icon {
+  transition: stroke 0.3s ease-in;
+  stroke: #865ed6;
 }

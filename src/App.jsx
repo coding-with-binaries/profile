@@ -11,7 +11,8 @@ function App() {
     <Grommet className="app-container" theme={theme} full>
       <Grid
         rows={['72px', 'flex']}
-        columns={['small', 'auto']}
+        fill="horizontal"
+        columns={['min-content', '1fr']}
         areas={[
           { name: 'header', start: [0, 0], end: [1, 0] },
           { name: 'nav', start: [0, 1], end: [0, 1] },

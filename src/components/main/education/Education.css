@@ -1,0 +1,8 @@
+.education-heading {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #fff;
+}

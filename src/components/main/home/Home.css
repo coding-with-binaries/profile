@@ -1,0 +1,30 @@
+.app-main .app-home {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 1fr 48px;
+  height: 100%;
+  width: 100%;
+}
+
+.app-nav-profile-pic-container {
+  margin-bottom: 2rem;
+}
+
+.app-nav-profile-pic-container > .app-nav-profile-pic-wrapper {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background: white;
+}
+
+.app-nav-profile-pic-wrapper > .app-nav-profile-pic {
+  height: 192px;
+  width: 192px;
+  border-radius: 96px;
+}
+
+.app-home .app-home-social-icon {
+  margin: 0 1rem;
+  cursor: pointer;
+}

@@ -1,25 +1,31 @@
 .app-container .app-nav {
-  background: linear-gradient(162.77deg, #865ed6 -9.18%, #18bab9 209.09%);
+  background: #181818;
+  width: 60px;
+  transition: width 0.3s ease-in;
 }
 
-.app-nav-profile-pic-container > .app-nav-profile-pic-wrapper {
-  height: 152px;
-  width: 152px;
-  border-radius: 76px;
-  background: white;
+.app-container .app-nav.expanded {
+  width: 220px;
+  transition: width 0.3s ease-in;
 }
 
-.app-nav-profile-pic-wrapper > .app-nav-profile-pic {
-  height: 144px;
-  width: 144px;
-  border-radius: 72px;
+.app-nav > .app-nav-actions > .app-nav-toggle {
+  display: flex;
+  padding: 6px 20px;
+  height: 48px;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
 }
 
 .app-nav > .app-nav-actions > .app-nav-action {
-  display: flex;
-  padding: 6px 30px;
+  display: grid;
+  grid-template-columns: 48px min-content;
+  padding: 6px;
   height: 48px;
   align-items: center;
+  justify-items: center;
   color: white;
   text-decoration: none;
   transition: color 0.3s ease-in, background 0.3s ease-in;
@@ -28,18 +34,22 @@
 .app-nav > .app-nav-actions > .app-nav-action:hover,
 .app-nav > .app-nav-actions > .app-nav-action.active {
   transition: color 0.3s ease-in, background 0.3s ease-in;
-  background: #f5f5f5;
-  color: #865ed6;
+  background: #1d1d1d;
+  color: #3398eb;
 }
 
+.app-nav-toggle > .app-nav-action-icon,
 .app-nav-action > .app-nav-action-icon {
   transition: stroke 0.3s ease-in;
   stroke: white;
-  margin-right: 12px;
 }
 
 .app-nav-action:hover > .app-nav-action-icon,
 .app-nav-action.active > .app-nav-action-icon {
   transition: stroke 0.3s ease-in;
-  stroke: #865ed6;
+  stroke: #3398eb;
+}
+
+.app-nav-action > .app-nav-action-text {
+  width: 160px;
 }

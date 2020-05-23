@@ -1,26 +1,35 @@
 import { Box, Clock, Text } from 'grommet';
 import React from 'react';
 import './Header.css';
+import { useHistory } from 'react-router-dom';
 
-export default function() {
+export default function () {
+  const history = useHistory();
+  const routeToHome = () => {
+    history.push('/');
+  };
   return (
     <Box
       className="app-header"
       gridArea="header"
       direction="row"
-      background="linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)"
+      background="#181818"
       align="center"
-      justify="between"
     >
-      <Box direction="row" align="center">
-        <Text weight="bold" color="white">
-          coding-with-binaries
-        </Text>
+      <Text
+        className="app-title"
+        weight="bold"
+        color="white"
+        onClick={routeToHome}
+      >
+        coding-with-binaries
+      </Text>
+      <Box direction="row" align="center" justify="between">
         <Text size="small" margin="small" color="white">
           (By Varun Sharma)
         </Text>
+        <Clock className="app-header-clock" type="digital" size="small" />
       </Box>
-      <Clock className="app-header-clock" type="digital" size="small" />
     </Box>
   );
 }

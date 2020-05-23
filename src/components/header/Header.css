@@ -1,7 +1,13 @@
 .app-container .app-header {
+  display: grid;
+  grid-template-columns: 192px auto;
   padding: 0 1rem;
 }
 
 .app-header .app-header-clock {
   color: white;
+}
+
+.app-header > .app-title {
+  cursor: pointer;
 }

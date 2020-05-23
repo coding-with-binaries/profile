@@ -1,0 +1,120 @@
+.app-timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  position: relative;
+  margin: 10px 0;
+  width: calc(50% - 30px);
+}
+
+.app-timeline-item:nth-child(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.app-timeline-item-content {
+  box-shadow: 0 12px 17px 2px rgba(0, 0, 0, 0.14),
+    0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 7px 8px -4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  position: relative;
+  width: 400px;
+  max-width: 70%;
+}
+
+.app-timeline-item-content::after {
+  content: ' ';
+  background-color: #333333;
+  position: absolute;
+  right: -7.5px;
+  top: calc(50% - 7.5px);
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+}
+
+.app-timeline-item:nth-child(odd) .app-timeline-item-content {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.app-timeline-item:nth-child(odd) .app-timeline-item-content::after {
+  right: auto;
+  left: -7.5px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.app-timeline-item-content-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-timeline-item-content-title,
+.app-timeline-item-content time {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.app-timeline-item-content-subtitle {
+  color: white;
+  font-size: 13px;
+}
+
+.app-timeline-item-content li {
+  color: white;
+}
+
+.app-timeline-item-content p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 4px 0;
+  max-width: 300px;
+  text-align: left;
+}
+
+.app-timeline-item-content .app-timeline-item-circle {
+  background-color: #1d1d1d;
+  border: 3px solid #777777;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 10px);
+  right: -43px;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+}
+
+.app-timeline-item:nth-child(odd)
+  .app-timeline-item-content
+  .app-timeline-item-circle {
+  right: auto;
+  left: -43px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .app-timeline-item-content {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .app-timeline-item-content,
+  .app-timeline-item:nth-child(odd) .app-timeline-item-content {
+    padding: 15px 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .app-timeline-item-content time {
+    margin-top: 20px;
+  }
+}

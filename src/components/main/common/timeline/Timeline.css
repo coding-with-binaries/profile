@@ -1,0 +1,15 @@
+.app-timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 8px 0;
+}
+
+.app-timeline::after {
+  background-color: #777777;
+  content: '';
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 100%;
+}

@@ -6,3 +6,9 @@
   text-transform: uppercase;
   color: #fff;
 }
+
+@media only screen and (max-width: 767px) {
+  .education-heading {
+    justify-content: flex-start;
+  }
+}

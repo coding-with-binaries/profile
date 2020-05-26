@@ -13,3 +13,9 @@
   width: 4px;
   height: 100%;
 }
+
+@media only screen and (max-width: 767px) {
+  .app-timeline::after {
+    left: 0;
+  }
+}

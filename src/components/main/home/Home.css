@@ -7,24 +7,44 @@
   width: 100%;
 }
 
+.app-home > .app-home-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .app-nav-profile-pic-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
 .app-nav-profile-pic-container > .app-nav-profile-pic-wrapper {
   height: 200px;
   width: 200px;
-  border-radius: 100px;
+  border-radius: 50%;
   background: white;
 }
 
 .app-nav-profile-pic-wrapper > .app-nav-profile-pic {
   height: 192px;
   width: 192px;
-  border-radius: 96px;
+  border-radius: 50%;
 }
 
 .app-home .app-home-social-icon {
   margin: 0 1rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .app-nav-profile-pic-container > .app-nav-profile-pic-wrapper {
+    height: 144px;
+    width: 144px;
+  }
+
+  .app-nav-profile-pic-wrapper > .app-nav-profile-pic {
+    height: 132px;
+    width: 132px;
+  }
 }

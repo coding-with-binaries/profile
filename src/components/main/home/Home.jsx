@@ -1,18 +1,14 @@
 import React from 'react';
-import { Box, Text, Image, Paragraph } from 'grommet';
+import { Text, Image, Paragraph, Box } from 'grommet';
 import './Home.css';
 import Texts from '../../../constants/text-en';
 import { Github, Twitter, Linkedin, Mail } from 'grommet-icons';
 
 export default function () {
   return (
-    <Box className="app-home">
-      <Box className="app-home-content">
-        <Box
-          className="app-nav-profile-pic-container"
-          align="center"
-          justify="center"
-        >
+    <div className="app-home">
+      <div className="app-home-content">
+        <div className="app-nav-profile-pic-container">
           <Box
             className="app-nav-profile-pic-wrapper"
             elevation="large"
@@ -24,7 +20,7 @@ export default function () {
               src={process.env.REACT_APP_IMAGE_URL}
             ></Image>
           </Box>
-        </Box>
+        </div>
         <Text color="white" size="xxlarge">
           {Texts.SENTENCE_MY_DESCRIPTION_FIRST}
         </Text>
@@ -37,8 +33,8 @@ export default function () {
         <Paragraph color="white" style={{ maxWidth: '500px' }}>
           {Texts.SENTENCE_FOOTBALL}
         </Paragraph>
-      </Box>
-      <Box
+      </div>
+      <div
         direction="row"
         align="center"
         justify="center"
@@ -68,7 +64,7 @@ export default function () {
         <a href="mailto:coding.with.binaries@gmail.com">
           <Mail className="app-home-social-icon" />
         </a>
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 }

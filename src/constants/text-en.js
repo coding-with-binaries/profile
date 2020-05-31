@@ -9,7 +9,7 @@ export default class Texts {
   static SENTENCE_MY_DESCRIPTION_SECOND =
     'I am currently working as a Full-Stack Developer at VMware India.';
   static SENTENCE_ABOUT_ME =
-    "I'm that person that may go from being cool to a complete nerd faster that the speed of sound (Pun intended).";
+    "I'm that person that may go from being cool to a complete nerd faster than the speed of sound (Pun intended).";
   static SENTENCE_FOOTBALL =
     'Also I like watching football (Madridista by heart).';
 }

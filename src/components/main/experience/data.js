@@ -34,7 +34,8 @@ export default [
     paragraphs: [
       'Created a Plugin for VMware Horizon for vRealize Suite Lifecycle Manager and wrote Java based state machines to perform all the supported operations.',
       'Worked on vRealize Suite Lifecycle Manager UI based on Angular.',
-      'Worked Angular based Dynamic UI which was rendered based on spec coming from API. Created these dynamic components based on VMware Clarity Design.',
+      'Created Spring Boot Services for performing GIT Operations using JGit Library based on Java.',
+      'Worked on Angular based Dynamic UI which was rendered based on spec coming from API. Created these dynamic components based on VMware Clarity Design.',
       'Worked on Dynamic Layouting Directive in Angular.',
       'Did a POC on deployment Deployment Management and Orchestration tools like Ansible, Puppet and Chef.',
       'Wrote Java based state machines tasks to automate the various workflows of Ansible, Puppet and Chef.'

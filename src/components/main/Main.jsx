@@ -2,14 +2,16 @@ import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import Routes from '../../constants/routes';
 import './Main.css';
-import Skills from './skills';
 import Education from './education';
 import Home from './home';
 import Experience from './experience';
+import cn from 'classnames';
 
-export default function () {
+export default function (props) {
+  const { navVisible } = props;
+
   return (
-    <div className="app-main">
+    <div className={cn('app-main', { 'nav-open': navVisible })}>
       <Switch>
         {/* <Route path={Routes.SKILLS} component={Skills} /> */}
         <Route path={Routes.EDUCATION} component={Education} />

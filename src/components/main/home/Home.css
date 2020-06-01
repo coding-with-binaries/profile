@@ -20,6 +20,9 @@
 }
 
 .app-nav-profile-pic-container > .app-nav-profile-pic-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -30,6 +33,19 @@
   height: 192px;
   width: 192px;
   border-radius: 50%;
+}
+
+.app-my-description-first {
+  font-size: xx-large;
+}
+
+.app-my-description-second {
+  font-size: x-large;
+}
+
+.app-my-description-sentence {
+  font-size: medium;
+  max-width: 500px;
 }
 
 .app-home .app-home-social-icon {
@@ -44,7 +60,19 @@
   }
 
   .app-nav-profile-pic-wrapper > .app-nav-profile-pic {
-    height: 132px;
-    width: 132px;
+    height: 136px;
+    width: 136px;
+  }
+
+  .app-my-description-first {
+    font-size: x-large;
+  }
+
+  .app-my-description-second {
+    font-size: large;
+  }
+
+  .app-my-description-sentence {
+    font-size: small;
   }
 }

@@ -4,3 +4,11 @@
   opacity: 1;
   overflow: auto;
 }
+
+@media only screen and (max-width: 767px) {
+  .app-container .app-main.nav-open {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+}

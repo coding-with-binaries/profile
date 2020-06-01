@@ -7,6 +7,11 @@
   color: #fff;
 }
 
+.education-heading > span {
+  font-size: 32px;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 767px) {
   .education-heading {
     justify-content: flex-start;

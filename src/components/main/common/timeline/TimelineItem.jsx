@@ -17,8 +17,8 @@ export default function (props) {
         )}
         <ul>
           {spec.paragraphs &&
-            spec.paragraphs.map((p) => (
-              <li>
+            spec.paragraphs.map((p, i) => (
+              <li key={i}>
                 <p>{p}</p>
               </li>
             ))}

@@ -1,4 +1,3 @@
-import { Box, Text } from 'grommet';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import navActions from './nav-actions';
@@ -12,11 +11,11 @@ export default function () {
   const toggleNav = () => setExpanded((prevExpanded) => !prevExpanded);
   const ToggleIcon = expanded ? Close : Menu;
   return (
-    <Box className={cn('app-nav', { expanded })} gridArea="nav">
-      <Box className="app-nav-actions">
-        <Box className="app-nav-toggle" onClick={toggleNav}>
+    <div className={cn('app-nav', { expanded })}>
+      <div className="app-nav-actions">
+        <div className="app-nav-toggle" onClick={toggleNav}>
           <ToggleIcon size="20px" className="app-nav-action-icon" />
-        </Box>
+        </div>
         {navActions.map((a, i) => {
           const Icon = a.icon;
           return (
@@ -29,14 +28,12 @@ export default function () {
             >
               <Icon size="20px" className="app-nav-action-icon" />
               {expanded && (
-                <Text className="app-nav-action-text" size="medium">
-                  {a.title}
-                </Text>
+                <span className="app-nav-action-text">{a.title}</span>
               )}
             </NavLink>
           );
         })}
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 }

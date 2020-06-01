@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text, Image, Paragraph, Box } from 'grommet';
 import './Home.css';
 import Texts from '../../../constants/text-en';
 import { Github, Twitter, Linkedin, Mail } from 'grommet-icons';
@@ -9,30 +8,22 @@ export default function () {
     <div className="app-home">
       <div className="app-home-content">
         <div className="app-nav-profile-pic-container">
-          <Box
-            className="app-nav-profile-pic-wrapper"
-            elevation="large"
-            align="center"
-            justify="center"
-          >
-            <Image
+          <div className="app-nav-profile-pic-wrapper">
+            <img
               className="app-nav-profile-pic"
               src={process.env.REACT_APP_IMAGE_URL}
-            ></Image>
-          </Box>
+              alt=""
+            ></img>
+          </div>
         </div>
-        <Text color="white" size="xxlarge">
+        <span className="app-my-description-first">
           {Texts.SENTENCE_MY_DESCRIPTION_FIRST}
-        </Text>
-        <Text color="white" size="large">
+        </span>
+        <span className="app-my-description-second">
           {Texts.SENTENCE_MY_DESCRIPTION_SECOND}
-        </Text>
-        <Paragraph color="white" style={{ maxWidth: '500px' }}>
-          {Texts.SENTENCE_ABOUT_ME}
-        </Paragraph>
-        <Paragraph color="white" style={{ maxWidth: '500px' }}>
-          {Texts.SENTENCE_FOOTBALL}
-        </Paragraph>
+        </span>
+        <p className="app-my-description-sentence">{Texts.SENTENCE_ABOUT_ME}</p>
+        <p className="app-my-description-sentence">{Texts.SENTENCE_FOOTBALL}</p>
       </div>
       <div
         direction="row"

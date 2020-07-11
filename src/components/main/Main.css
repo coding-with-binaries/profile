@@ -5,6 +5,10 @@
   overflow: auto;
 }
 
+.app-container.light .app-main {
+  background: #f1f1f1;
+}
+
 @media only screen and (max-width: 767px) {
   .app-container .app-main.nav-open {
     height: 0;

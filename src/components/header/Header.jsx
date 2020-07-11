@@ -2,11 +2,11 @@ import { Clock } from 'grommet';
 import React from 'react';
 import './Header.css';
 import { useHistory, Link } from 'react-router-dom';
-import { Close, Menu } from 'grommet-icons';
+import { Close, Menu, Sun, Moon } from 'grommet-icons';
 import navActions from '../nav/nav-actions';
 
 export default function (props) {
-  const { navVisible, toggleVisiblity, closeNav } = props;
+  const { theme, navVisible, toggleVisiblity, toggleTheme, closeNav } = props;
   const history = useHistory();
   const routeToHome = () => {
     closeNav();
@@ -14,6 +14,7 @@ export default function (props) {
   };
 
   const ToggleIcon = navVisible ? Close : Menu;
+  const ThemeIcon = theme === 'DARK' ? Sun : Moon;
   return (
     <div className="app-header-container">
       <div className="app-header">
@@ -22,12 +23,19 @@ export default function (props) {
         </span>
         <div className="app-header-extras">
           <span className="app-by">(By Varun Sharma)</span>
-          <Clock className="app-header-clock" type="digital" size="small" />
-          <ToggleIcon
-            size="20px"
-            className="app-header-nav-toggle"
-            onClick={toggleVisiblity}
-          />
+          <div className="app-header-extras-tools">
+            <Clock className="app-header-clock" type="digital" size="small" />
+            <ThemeIcon
+              size="24px"
+              className="app-header-theme-toggle"
+              onClick={toggleTheme}
+            />
+            <ToggleIcon
+              size="20px"
+              className="app-header-nav-toggle"
+              onClick={toggleVisiblity}
+            />
+          </div>
         </div>
       </div>
       {navVisible && (

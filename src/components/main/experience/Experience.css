@@ -4,7 +4,11 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  color: #fff;
+  color: #f1f1f1;
+}
+
+.app-container.light .experience-heading {
+  color: #1d1d1d;
 }
 
 .experience-heading > span {

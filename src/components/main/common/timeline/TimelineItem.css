@@ -21,6 +21,12 @@
   max-width: 70%;
 }
 
+.app-container.light .app-timeline-item-content {
+  background-color: #dddddd;
+  box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08),
+    0 1px 3px 1px rgba(66, 66, 66, 0.16);
+}
+
 .app-timeline-item-content::after {
   content: ' ';
   background-color: #333333;
@@ -32,6 +38,10 @@
   height: 15px;
 }
 
+.app-container.light .app-timeline-item-content::after {
+  background-color: #dddddd;
+}
+
 .app-timeline-item-content-header {
   width: 100%;
   display: flex;
@@ -41,19 +51,32 @@
 
 .app-timeline-item-content-title,
 .app-timeline-item-content time {
-  color: white;
+  color: #f1f1f1;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+.app-container.light .app-timeline-item-content-title,
+.app-container.light .app-timeline-item-content time {
+  color: #1d1d1d;
+}
+
 .app-timeline-item-content-subtitle {
-  color: white;
+  color: #f1f1f1;
   font-size: 13px;
 }
 
+.app-container.light .app-timeline-item-content-subtitle {
+  color: #1d1d1d;
+}
+
 .app-timeline-item-content li {
-  color: white;
+  color: #f1f1f1;
+}
+
+.app-container.light .app-timeline-item-content li {
+  color: #1d1d1d;
 }
 
 .app-timeline-item-content p {
@@ -74,6 +97,11 @@
   width: 20px;
   height: 20px;
   z-index: 100;
+}
+
+.app-container.light .app-timeline-item-content .app-timeline-item-circle {
+  background-color: #f1f1f1;
+  border: 3px solid #bbbbbb;
 }
 
 @media screen and (min-width: 768px) {

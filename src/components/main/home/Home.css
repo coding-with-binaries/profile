@@ -26,7 +26,13 @@
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background: white;
+  background: #333333;
+}
+
+.app-container.light
+  .app-nav-profile-pic-container
+  > .app-nav-profile-pic-wrapper {
+  background: #dddddd;
 }
 
 .app-nav-profile-pic-wrapper > .app-nav-profile-pic {

@@ -5,11 +5,15 @@
   width: 100vw;
 
   font-family: Quicksand;
-  color: #fff;
+  color: #f1f1f1;
 
   display: grid;
   grid-template-rows: min-content 1fr;
   grid-template-columns: min-content 1fr;
+}
+
+.app-container.light {
+  color: #1d1d1d;
 }
 
 @media only screen and (max-width: 767px) {

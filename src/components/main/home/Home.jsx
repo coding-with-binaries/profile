@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Texts from '../../../constants/text-en';
-import { Github, Twitter, Linkedin, Mail } from 'grommet-icons';
+import { Github, Twitter, Linkedin, Mail, Phone } from 'grommet-icons';
 
 export default function () {
   return (
@@ -54,6 +54,9 @@ export default function () {
         </a>
         <a href="mailto:coding.with.binaries@gmail.com">
           <Mail className="app-home-social-icon" />
+        </a>
+        <a href="tel:+919686991295">
+          <Phone className="app-home-social-icon" />
         </a>
       </div>
     </div>

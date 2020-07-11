@@ -4,6 +4,10 @@
   transition: width 0.3s ease-in;
 }
 
+.app-container.light .app-nav {
+  background: #e8e8e8;
+}
+
 .app-container .app-nav.expanded {
   width: 220px;
   transition: width 0.3s ease-in;
@@ -16,7 +20,11 @@
   align-items: center;
   justify-content: flex-end;
   cursor: pointer;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.app-container.light .app-nav > .app-nav-actions > .app-nav-toggle {
+  border-bottom: 1px solid #181818;
 }
 
 .app-nav > .app-nav-actions > .app-nav-action {
@@ -26,9 +34,13 @@
   height: 48px;
   align-items: center;
   justify-items: center;
-  color: white;
+  color: #f1f1f1;
   text-decoration: none;
   transition: color 0.3s ease-in, background 0.3s ease-in;
+}
+
+.app-container.light .app-nav > .app-nav-actions > .app-nav-action {
+  color: #1d1d1d;
 }
 
 .app-nav > .app-nav-actions > .app-nav-action:hover,
@@ -38,14 +50,27 @@
   color: #3398eb;
 }
 
+.app-container.light .app-nav > .app-nav-actions > .app-nav-action:hover,
+.app-container.light .app-nav > .app-nav-actions > .app-nav-action.active {
+  background: #f1f1f1;
+  color: #3398eb;
+}
+
 .app-nav-toggle > .app-nav-action-icon,
 .app-nav-action > .app-nav-action-icon {
   transition: stroke 0.3s ease-in;
-  stroke: white;
+  stroke: #f1f1f1;
+}
+
+.app-container.light .app-nav-toggle > .app-nav-action-icon,
+.app-container.light .app-nav-action > .app-nav-action-icon {
+  stroke: #1d1d1d;
 }
 
 .app-nav-action:hover > .app-nav-action-icon,
-.app-nav-action.active > .app-nav-action-icon {
+.app-nav-action.active > .app-nav-action-icon,
+.app-container.light .app-nav-action:hover > .app-nav-action-icon,
+.app-container.light .app-nav-action.active > .app-nav-action-icon {
   transition: stroke 0.3s ease-in;
   stroke: #3398eb;
 }

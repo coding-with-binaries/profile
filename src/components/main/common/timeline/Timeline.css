@@ -14,6 +14,10 @@
   height: 100%;
 }
 
+.app-container.light .app-timeline::after {
+  background-color: #bbbbbb;
+}
+
 @media only screen and (max-width: 767px) {
   .app-timeline::after {
     left: 0;

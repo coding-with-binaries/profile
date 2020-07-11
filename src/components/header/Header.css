@@ -1,4 +1,4 @@
-.app-header-container {
+.app-container .app-header-container {
   display: flex;
   flex-direction: column;
 
@@ -6,13 +6,17 @@
   grid-row: 1 / 2;
 }
 
-.app-header-container .app-header {
+.app-container .app-header-container .app-header {
   height: 72px;
   display: grid;
   grid-template-columns: 192px auto;
   padding: 0 1rem;
   align-items: center;
   background: #181818;
+}
+
+.app-container.light .app-header-container .app-header {
+  background: #e8e8e8;
 }
 
 .app-header-container .app-header-nav {
@@ -22,8 +26,12 @@
 .app-header > .app-title {
   cursor: pointer;
   font-size: large;
-  color: #fff;
+  color: #f1f1f1;
   font-weight: bold;
+}
+
+.app-container.light .app-header > .app-title {
+  color: #1d1d1d;
 }
 
 .app-header > .app-header-extras {
@@ -37,7 +45,26 @@
 }
 
 .app-header-extras > .app-header-clock {
-  color: white;
+  color: #f1f1f1;
+}
+
+.app-container.light .app-header-extras > .app-header-clock {
+  color: #1d1d1d;
+}
+
+.app-header-extras > .app-header-extras-tools {
+  display: flex;
+  align-items: center;
+}
+
+.app-header-extras .app-header-theme-toggle {
+  margin: 0 1rem;
+  cursor: pointer;
+  fill: #f1f1f1;
+}
+
+.app-container.light .app-header-extras .app-header-theme-toggle {
+  fill: #1d1d1d;
 }
 
 .app-header-extras .app-header-nav-toggle {
@@ -54,6 +81,10 @@
     height: calc(100vh - 72px);
   }
 
+  .app-container.light .app-header-container .app-header-nav {
+    background: #e8e8e8;
+  }
+
   .app-header-nav > .app-header-nav-actions {
     display: flex;
     flex-direction: column;
@@ -67,10 +98,17 @@
     height: 48px;
     align-items: center;
     justify-items: center;
-    color: white;
+    color: #f1f1f1;
     font-size: larger;
     text-decoration: none;
     transition: color 0.3s ease-in;
+  }
+
+  .app-container.light
+    .app-header-nav
+    > .app-header-nav-actions
+    > .app-header-nav-action {
+    color: #1d1d1d;
   }
 
   .app-header-nav > .app-header-nav-actions > .app-header-nav-action:hover {
@@ -80,7 +118,11 @@
 
   .app-header-nav-action > .app-header-nav-action-icon {
     transition: stroke 0.3s ease-in;
-    stroke: white;
+    stroke: #f1f1f1;
+  }
+
+  .app-container.light .app-header-nav-action > .app-header-nav-action-icon {
+    stroke: #1d1d1d;
   }
 
   .app-header-nav-action:hover > .app-header-nav-action-icon {
@@ -92,7 +134,7 @@
     display: none;
   }
 
-  .app-header-extras > .app-header-clock {
+  .app-header-extras .app-header-clock {
     display: none;
   }
 
@@ -102,6 +144,10 @@
 
   .app-header-extras .app-header-nav-toggle {
     display: unset;
-    stroke: white;
+    stroke: #f1f1f1;
+  }
+
+  .app-container.light .app-header-extras .app-header-nav-toggle {
+    stroke: #1d1d1d;
   }
 }

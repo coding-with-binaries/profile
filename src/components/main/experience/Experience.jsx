@@ -7,9 +7,7 @@ export default function () {
   return (
     <>
       <div className="experience-heading">
-        <span size="32px" weight="bold">
-          Experience
-        </span>
+        <span>Experience</span>
       </div>
       <Timeline data={data} />
     </>

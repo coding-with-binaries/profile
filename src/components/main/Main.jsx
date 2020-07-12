@@ -6,6 +6,7 @@ import Education from './education';
 import Home from './home';
 import Experience from './experience';
 import cn from 'classnames';
+import Skills from './skills/Skills';
 
 export default function (props) {
   const { navVisible } = props;
@@ -13,7 +14,7 @@ export default function (props) {
   return (
     <div className={cn('app-main', { 'nav-open': navVisible })}>
       <Switch>
-        {/* <Route path={Routes.SKILLS} component={Skills} /> */}
+        <Route path={Routes.SKILLS} component={Skills} />
         <Route path={Routes.EDUCATION} component={Education} />
         <Route path={Routes.EXPERIENCE} component={Experience} />
         <Route exact path={Routes.HOME} component={Home} />

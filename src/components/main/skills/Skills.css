@@ -1,4 +1,60 @@
-.app-skills {
-  color: white;
-  font-weight: 100;
+.skills-heading {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #f1f1f1;
+}
+
+.app-container.light .skills-heading {
+  color: #1d1d1d;
+}
+
+.skills-heading > span {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.skills-grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.skill-grid {
+  box-shadow: 0 12px 17px 2px rgba(0, 0, 0, 0.14),
+    0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 7px 8px -4px rgba(0, 0, 0, 0.2);
+  background-color: #222222;
+
+  display: grid;
+  grid-template-rows: 280px 40px;
+}
+
+.app-container.light .skill-grid {
+  background-color: #ececec;
+  box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08),
+    0 1px 3px 1px rgba(66, 66, 66, 0.16);
+}
+
+.skill-icon {
+  align-self: center;
+  justify-self: center;
+}
+
+.skill-name {
+  margin-bottom: 1rem;
+  align-self: center;
+  justify-self: center;
+
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .skills-heading {
+    justify-content: flex-start;
+  }
 }

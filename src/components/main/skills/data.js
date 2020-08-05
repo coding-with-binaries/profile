@@ -10,6 +10,9 @@ import TypescriptIcon from '../common/svg-icons/TypescriptIcon';
 import JavascriptIcon from '../common/svg-icons/JavascriptIcon';
 import HtmlIcon from '../common/svg-icons/HtmlIcon';
 import CssIcon from '../common/svg-icons/CssIcon';
+import DotnetIcon from '../common/svg-icons/DotnetIcon';
+import CSharpIcon from '../common/svg-icons/CSharpIcon';
+import VueIcon from '../common/svg-icons/VueIcon';
 
 export default [
   {
@@ -21,7 +24,7 @@ export default [
     icon: ReduxIcon
   },
   {
-    name: 'Spring',
+    name: 'Spring Boot',
     icon: SpringIcon
   },
   {
@@ -35,6 +38,18 @@ export default [
   {
     name: 'Javascript',
     icon: JavascriptIcon
+  },
+  {
+    name: '.NET Core',
+    icon: DotnetIcon
+  },
+  {
+    name: 'C#',
+    icon: CSharpIcon
+  },
+  {
+    name: 'Vue JS',
+    icon: VueIcon
   },
   {
     name: 'PostgreSQL',

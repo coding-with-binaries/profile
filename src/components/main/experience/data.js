@@ -10,6 +10,7 @@ export default [
       'Created a Python based Interactive CLI using Click to improve the productivity of the Dev Team.',
       'Worked on JUnits using PowerMock to increase the coverage.',
       'Authored a Dynamic Gating based framework for dynamic role based access',
+      'Worked on vRealize Suite Lifecycle Manager Public APIs and its standardization',
       'Submitted Multiple VMware RADIO(Research and Development Innovation Offsite) ideas.'
     ]
   },
